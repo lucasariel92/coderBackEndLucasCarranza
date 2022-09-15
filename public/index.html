@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav></nav>
+
+    <div class="formContainer">
+        <form action="/api/products" method="POST" class="form">
+            <p class="formLabel">Codigo: </p><input type="text" name="id">
+            <p class="formLabel">Descripcion: </p><input type="text" name="title">
+            <p class="formLabel">Precio 1: </p><input type="number" name="price">
+            <p class="formLabel">Unidad de medida 1: </p><input type="text" name="uMed">
+            <p class="formLabel">Precio 2: </p><input type="number" name="price2">
+            <p class="formLabel">Unidad de medida 2: </p><input type="text" name="uMed2">
+            <p class="formLabel">Cantidad por pack: </p><input type="number" name="pack">
+            <p class="formLabel">Metros Lineales: </p><input type="number" name="linealMeters">
+            <p class="formLabel">Metros Cuadrados: </p><input type="number" name="squareMeters">
+            <p class="formLabel">Pies Cuadrados: </p><input type="number" name="squareFeet">
+            <p class="formLabel">Ancho: </p><input type="number" name="wide">
+            <p class="formLabel">Largo: </p><input type="number" name="long">
+            <button>Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
