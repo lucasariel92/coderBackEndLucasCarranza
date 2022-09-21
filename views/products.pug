@@ -1,0 +1,25 @@
+html
+    head
+        link(rel="stylesheet" href="/styles.css")
+        title Productos 
+    body
+        include ./includes/navbar.pug
+
+        table 
+            tr 
+                th(class="id") CODIGO
+                th(class="title") DESCRIPCION 
+                th(class="price") PRECIO
+                th(class="price") PRECIO 2
+                th(class="pack") PAQUETE 
+                th(class="measure") LARGO
+                th(class="measure") ANCHO 
+            each val in data 
+                tr
+                    td(class="id")= val.id
+                    td(class="title")= val.title 
+                    td(class="price")= "$" + val.price + " x " + val.uMed
+                    td(class="price")= "$" + val.price2 + " x " + val.uMed2
+                    td(class="pack")= val.pack
+                    td(class="measure")= val.wide 
+                    td(class="measure")= val.long

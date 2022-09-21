@@ -10,8 +10,8 @@ const Products = []
 //devolver todos los productos
 router.get("/products", async (req, res) => {
  const data = await products.getAll()
+ res.render("products", { data })
  
- res.send(data)
 })
 
 
